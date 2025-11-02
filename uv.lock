@@ -451,7 +451,7 @@ wheels = [
 
 [[package]]
 name = "langchain-pinecone"
-version = "0.2.12"
+version = "0.2.13"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "httpx" },
@@ -459,11 +459,12 @@ dependencies = [
     { name = "langchain-openai" },
     { name = "numpy" },
     { name = "pinecone", extra = ["asyncio"] },
+    { name = "pydantic" },
     { name = "simsimd" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/1f/7e/951234428c9774d21d7899564fd3647817429602e10b1ac5c78287aa6861/langchain_pinecone-0.2.12.tar.gz", hash = "sha256:d6895671f0b48024f188956ab20cb7abc85552e4ff1afd7722912e5df200b9e8", size = 39032, upload-time = "2025-09-02T09:35:13.608Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/5f/e9/b52029651f6f8c0c585f26ae665a8ef34cd36a47b2590a2cd3a1a0b11d9d/langchain_pinecone-0.2.13.tar.gz", hash = "sha256:294a6da7e1a81d5805060e37639d3e4fb72cb239d651a34a4d1f81ba096f473a", size = 40655, upload-time = "2025-11-02T19:11:45.842Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/3e/77/0ac841deae9fea74506b966dc4c329dc77ed5ecff48adb058172df2b7513/langchain_pinecone-0.2.12-py3-none-any.whl", hash = "sha256:6fb34714c0d533a65642657a75bb9d42b00bc77b7cfd91e223cd71cd6b0d5d41", size = 25905, upload-time = "2025-09-02T09:35:12.766Z" },
+    { url = "https://files.pythonhosted.org/packages/1e/cf/27ec504e2fa92e73d49bc49f4345d82e5b6e75158c56092f5140f6afc8bd/langchain_pinecone-0.2.13-py3-none-any.whl", hash = "sha256:2f9db3f9d8c634e8716eb8fb65a405458083c4d52810be76294665e2d75ad65a", size = 26232, upload-time = "2025-11-02T19:11:44.749Z" },
 ]
 
 [[package]]
@@ -882,12 +883,9 @@ dependencies = [
     { name = "black" },
     { name = "langchain" },
     { name = "langchain-community" },
-    { name = "langchain-openai" },
     { name = "langchain-pinecone" },
     { name = "langchain-text-splitters" },
     { name = "langchainhub" },
-    { name = "pinecone" },
-    { name = "python-dotenv" },
 ]
 
 [package.metadata]
@@ -895,12 +893,9 @@ requires-dist = [
     { name = "black", specifier = ">=25.9.0" },
     { name = "langchain", specifier = ">=0.3.27" },
     { name = "langchain-community", specifier = ">=0.3.15" },
-    { name = "langchain-openai", specifier = ">=0.3.35" },
-    { name = "langchain-pinecone", specifier = ">=0.2.12" },
+    { name = "langchain-pinecone", specifier = ">=0.2.13" },
     { name = "langchain-text-splitters", specifier = ">=0.3.5" },
     { name = "langchainhub", specifier = ">=0.1.21" },
-    { name = "pinecone", specifier = ">=5.0.0" },
-    { name = "python-dotenv", specifier = ">=1.2.1" },
 ]
 
 [[package]]

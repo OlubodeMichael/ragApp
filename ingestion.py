@@ -13,7 +13,7 @@ from langchain_pinecone import PineconeVectorStore
 if __name__ == "__main__":
     loader = TextLoader("/Users/lacatel/Desktop/Ai Agent/RagApp/blogText.txt")
     documents = loader.load()
-    #print(documents)
+    
 
     text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
     texts = text_splitter.split_documents(documents)
