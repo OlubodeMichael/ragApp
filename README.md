@@ -158,14 +158,33 @@ llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
 - Make sure your `.env` file is in `.gitignore` to avoid committing API keys
 - The application uses `allow_dangerous_deserialization=True` when loading FAISS indices - only load indices from trusted sources
 
-## License
-
-[Add your license here]
-
 ## Contributing
 
-[Add contribution guidelines here]
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+
+1. **Fork the repository** and create your branch from `main`
+2. **Make your changes** following the existing code style
+3. **Test your changes** to ensure they work correctly
+4. **Commit your changes** with clear, descriptive commit messages
+5. **Push to your fork** and submit a pull request
+
+### Contribution Guidelines
+
+- Ensure your code follows Python best practices (PEP 8)
+- Add comments for complex logic
+- Update the README if you add new features or change existing ones
+- Test your changes before submitting a PR
+- Be respectful and constructive in discussions
+
+### Reporting Issues
+
+If you find a bug or have a suggestion, please open an issue with:
+
+- A clear description of the problem or feature request
+- Steps to reproduce (for bugs)
+- Expected vs. actual behavior
+- Your Python version and environment details
 
 ## Author
 
-[Add your name/contact information here]
+Michael Olubode
