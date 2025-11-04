@@ -1,9 +1,9 @@
 import os
 
 from dotenv import load_dotenv
-from langchain import hub
-from langchain.chains.combine_documents import create_stuff_documents_chain
-from langchain.chains.retrieval import create_retrieval_chain
+from langchain_classic import hub
+from langchain_classic.chains.combine_documents import create_stuff_documents_chain
+from langchain_classic .chains.retrieval import create_retrieval_chain
 from langchain_core.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain_pinecone import PineconeVectorStore
@@ -34,4 +34,4 @@ if __name__ == "__main__":
 
     result = retrival_chain.invoke(input={"input": query})
 
-    print(result)
+    print(result["answer"])
